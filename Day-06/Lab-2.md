@@ -131,6 +131,8 @@ GROUP BY CustomerId, DATE_TRUNC('month', OrderDate);
 
 ## Step 6: Query Result Tables
 
+**Note** Change Catalog and schema as per your setup.
+
 In a Databricks notebook or SQL editor, run queries to validate output:
 
 ```sql
