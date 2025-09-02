@@ -373,13 +373,49 @@ The steps for configuring and running the DLT pipeline in the UI are largely the
      - Click **Create Pipeline**.
 
 3. **Configure Pipeline Settings:**
-     - **Pipeline Name:** Retail Sales Pipeline Python Batch Lab
-     - **Pipeline Mode:** Select **Triggered**. (Continuous mode is less relevant for purely batch ingestion unless you plan to re-trigger based on new file arrivals manually or via an external scheduler).
-     - **Notebook Libraries:** Select the Python DLT notebook you created (e.g., `dlt_retail_pipeline_python_batch`).
-     - **Storage Location (Optional but Recommended):** E.g., `/delta_live_tables/retail_lab_python_batch`.
-     - **Target Schema (Optional but Recommended):** E.g., `dlt_retail_lab_db_python_batch`.
-     - **Cluster Policy, Cluster Mode, Workers, Photon, Channel, Notifications:** Configure as in the previous lab version. For batch, the cluster might not need to be as robust unless the batch processing itself is very heavy.
-     - **Configuration (Advanced):** No specific Spark conf needed for this batch setup unless you encounter memory issues with large CSVs.
+    ### Pipeline Configuration Steps
+
+    1. **Pipeline Name:**  
+        - Enter: `Retail Sales Pipeline Python Batch Lab`
+
+    2. **Pipeline Mode:**  
+        - Select **Triggered**  
+        - *(Recommended for batch ingestion; continuous mode is typically used for streaming or frequent file arrivals.)*
+
+    3. **Notebook Libraries:**  
+        - Choose the Python DLT notebook you created (e.g., `dlt_retail_pipeline_python_batch`)
+
+    4. **Destination Storage:**  
+        - Set to **Unity Catalog**
+
+    5. **Default Catalog:**  
+        - Enter: `catalog01`  
+        - *(Use this catalog for all tables as per your setup)*
+
+    6. **Default Schema:**  
+        - Enter: `sales`  
+        - *(Use this schema for all tables as per your setup)*
+
+    7. **Cluster Mode:**  
+        - Select **Fixed Size**
+
+    8. **Workers:**  
+        - Set to `1`
+
+    9. **Target Schema:**  
+        - Enter: `sales`  
+        - *(Same as mentioned in the code above)*
+
+    10. **Instance Types:**  
+        - Select `Standard_DS3_v2`  
+        - *(Recommended for balanced performance and cost for typical ETL workloads)*
+
+    11. **Driver Type:**  
+        - Set to `Standard_DS3_v2`  
+        - *(Same as worker node instance type)*
+
+    12. **Source Code Link:**  
+        - In the pipeline details, click on the **Source code** link to review your notebook.
 
 4. **Save and Start:**
      - Click **Create**, then **Start**.
