@@ -367,7 +367,7 @@ def gold_customer_sales_summary_batch():
 The steps for configuring and running the DLT pipeline in the UI are largely the same.
 
 1. **Go to Delta Live Tables UI:**
-     - In your Databricks workspace, click **Workflows** in the left sidebar, then select the **Delta Live Tables** tab.
+     - In your Databricks workspace, click **Jobs & Pipeline** in the left sidebar, then select the **DTL** tab.
 
 2. **Create Pipeline:**
      - Click **Create Pipeline**.
