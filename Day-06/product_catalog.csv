@@ -1,0 +1,51 @@
+ProductID,Item,Category,UnitPrice
+PROD3000,Smartphone,Electronics,893.23
+PROD3001,Laptop,Electronics,1357.95
+PROD3002,Bluetooth Speaker,Electronics,781.62
+PROD3003,,Electronics,1043.5
+PROD3004,Smartwatch,Electronics,1166.83
+PROD3005,Running Shoes,Apparel,0
+PROD3006,T-Shirt,Apparel,74.96
+PROD3007,Jeans,Apparel,102.22
+PROD3008,Jacket,Apparel,178.65
+,Sunglasses,Apparel,101.72
+PROD3010,Blender,Home & Kitchen,265.85
+PROD3011,Microwave,Home & Kitchen,306.02
+PROD3012,Coffee Maker,Home & Kitchen,493.13
+PROD3013,Vacuum Cleaner,Home & Kitchen,111.58
+PROD3014,Air Purifier,Home & Kitchen,471.37
+PROD3015,Lipstick,Beauty,132.35
+PROD3016,Perfume,Beauty,48.96
+PROD3017,Foundation,Beauty,135.88
+PROD3018,Moisturizer,Beauty,145.13
+PROD3019,Nail Polish,Beauty,0
+PROD3020,Football,Sports,54.37
+PROD3021,,Sports,152.03
+PROD3022,Yoga Mat,Sports,127.99
+PROD3023,Running Shorts,Sports,278.63
+PROD3024,Basketball,Sports,252.86
+PROD3025,Building Blocks,Toys,58.63
+PROD3026,Action Figure,Toys,60.65
+PROD3027,Puzzle,Toys,53.84
+PROD3028,Doll,Toys,31.13
+PROD3029,Remote Car,Toys,6.8
+PROD3030,Mystery Novel,Books,54.28
+PROD3031,Science Textbook,Books,16.92
+,Cookbook,Books,42.12
+PROD3033,Biography,Books,46.3
+PROD3034,Children's Book,Books,6.62
+PROD3035,Car Cover,Automotive,380.21
+PROD3036,GPS Navigator,Automotive,379.55
+PROD3037,Car Vacuum,Automotive,98.41
+PROD3038,Dash Cam,Automotive,330.24
+PROD3039,Tire Inflator,Automotive,127.25
+PROD3040,Garden Hose,Garden,137.73
+PROD3041,Lawn Mower,Garden,312.5
+PROD3042,Pruning Shears,Garden,307.9
+PROD3043,Fertilizer,Garden,77.63
+PROD3044,Plant Pots,Garden,316.61
+PROD3045,Vitamin Supplements,Health,247.52
+PROD3046,Blood Pressure Monitor,Health,172.01
+PROD3047,First Aid Kit,Health,102.73
+PROD3048,Thermometer,Health,0
+PROD3049,Hand Sanitizer,Health,67.13
