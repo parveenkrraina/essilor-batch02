@@ -55,6 +55,7 @@ Add the following to the first cell of your notebook:
 
 ```python
 import dlt
+import pyspark.sql.functions as F
 from pyspark.sql.functions import col, expr, to_date, year, current_date, upper, trim, regexp_replace, when, lit, sha2, concat_ws, lower
 from pyspark.sql.types import StringType, IntegerType, DoubleType, DateType, TimestampType
 ```
@@ -80,7 +81,7 @@ Add the following code to a new cell:
         }
 )
 def bronze_customer_details_batch():
-        schema = "customer_id STRING, first_name STRING, last_name STRING, email STRING, date_of_birth STRING, address STRING, country_code STRING"
+         schema = "CustomerId STRING, CustomerName STRING, EmailAddress STRING, PhoneNumber STRING, Address STRING, Country STRING, City STRING, State STRING, PostalCode INTEGER"
         return (
                 spark.read
                 .format("csv")
