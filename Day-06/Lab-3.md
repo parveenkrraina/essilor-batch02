@@ -19,7 +19,7 @@ This lab guides you through building a complete Delta Live Tables (DLT) pipeline
 Before building the DLT pipeline, you need to upload the provided CSV files to a location accessible by Databricks, typically DBFS (Databricks File System) or cloud storage. For this lab, we'll use DBFS.
 
 **Navigate to DBFS:**
-- In your Databricks workspace, go to **Data** in the left sidebar.
+- In your Databricks workspace, go to **Catalog** in the left sidebar.
 - Click on the **DBFS** tab.
 
 **Create a Directory:**
