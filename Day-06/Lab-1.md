@@ -42,13 +42,13 @@ def bronze_sales():
     )
 
 @dlt.table(
-  name="sales.silver_sales",
+  name="silver_sales",
   comment="Cleaned and deduplicated Silver sales data"
 )
 @dlt.expect("valid_quantity", "Quantity > 0")
 @dlt.expect_or_drop("no_nulls", "CustomerId IS NOT NULL")
 def silver_sales():
-    df = dlt.read("sales.bronze_sales")
+    df = dlt.read("bronze_sales")
     return df.filter(col("Quantity") > 0).dropDuplicates(["SalesOrderNumber", "SalesOrderLineNumber"])
 
 ```
@@ -73,7 +73,7 @@ SELECT
   SUM(Quantity * UnitPrice) AS total_sales,
   COUNT(DISTINCT CustomerId) AS unique_customers
 FROM
-  sales.silver_sales
+  silver_sales
 GROUP BY
   OrderDate
 
