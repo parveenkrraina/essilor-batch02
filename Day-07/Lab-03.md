@@ -80,8 +80,8 @@ demog_df = spark.read.json(demog_json)
 sales_df_clean = sales_df.na.drop()
 demog_df_clean = demog_df.na.drop()
 
-# Merge on Customer or common column (assume 'CustomerName')
-merged = sales_df_clean.join(demog_df_clean, "CustomerName", "inner")
+# Merge on Customer or common column (assume 'CustomerID')
+merged = sales_df_clean.join(demog_df_clean, "CustomerID", "inner")
 print("Merged Data (First 5 rows):")
 display(merged.limit(5))
 
@@ -155,7 +155,7 @@ display(row_count)
 6. Transform and Merge (Notebook 3)
    - Depends on Task 1 & 2
    - Pass outputs as inputs
-     - key: sales_json, Value: {{tasks.Ingest_Sales_Data_.values.ingested_data_json}}
+     - key: sales_json, Value: {{tasks.Ingest_Sales_Data.values.ingested_data_json}}
      - key: demog_json, Value: {{tasks.Ingest_Customer_Data.values.ingested_customer_data_json}}
 7. Generate Report (Notebook 4)
    - Depends on Task 3
