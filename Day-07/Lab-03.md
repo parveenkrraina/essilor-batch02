@@ -155,7 +155,7 @@ display(row_count)
 6. Transform and Merge (Notebook 3)
    - Depends on Task 1 & 2
    - Pass outputs as inputs
-     - key: sales_json, Value: {{tasks.Ingest_Sales_Data_.values.ingested_data_json}}
+     - key: sales_json, Value: {{tasks.Ingest_Sales_Data.values.ingested_data_json}}
      - key: demog_json, Value: {{tasks.Ingest_Customer_Data.values.ingested_customer_data_json}}
 7. Generate Report (Notebook 4)
    - Depends on Task 3
