@@ -80,8 +80,8 @@ demog_df = spark.read.json(demog_json)
 sales_df_clean = sales_df.na.drop()
 demog_df_clean = demog_df.na.drop()
 
-# Merge on Customer or common column (assume 'CustomerName')
-merged = sales_df_clean.join(demog_df_clean, "CustomerName", "inner")
+# Merge on Customer or common column (assume 'CustomerID')
+merged = sales_df_clean.join(demog_df_clean, "CustomerID", "inner")
 print("Merged Data (First 5 rows):")
 display(merged.limit(5))
 
