@@ -18,6 +18,19 @@ Ensure you have:
 - Permissions to create/access compute resources, schemas, and volumes.
 
 ---
+### Enable the New Pipeline Monitoring UI
+
+You can enable a streamlined pipeline monitoring UI as part of the Lakeflow Pipelines Editor beta. The new monitoring UI is on by default when the beta is enabled.
+
+**To enable and use the new monitoring UI:**
+
+1. Click **Jobs & Pipelines** in the Databricks workspace sidebar.
+2. Click the name of any pipeline to open its details page.
+3. At the top of the page, use the **New pipeline page** toggle to enable the updated monitoring UI.
+
+> The UI will show both beta features when enabled. If you turn off the new monitoring UI, the page will highlight any changes.
+
+![New Pipeline UI Toggle](./images/lakeflow_new_UI.png)
 
 #### Step 1: Create a Pipeline
 
